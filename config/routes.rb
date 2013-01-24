@@ -1,4 +1,7 @@
 Saasy::Application.routes.draw do
+  resources :drafts
+
+
   mount StripeEvent::Engine => '/stripe'
   get "content/gold"
   get "content/silver"
